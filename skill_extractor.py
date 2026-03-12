@@ -1,27 +1,17 @@
 COMMON_SKILLS = [
-    "python",
-    "sql",
-    "excel",
-    "tableau",
-    "power bi",
-    "aws",
-    "docker",
-    "kubernetes",
-    "machine learning",
-    "deep learning",
-    "pandas",
-    "numpy",
-    "statistics",
-    "data analysis",
-    "react",
-    "javascript",
-    "java",
-    "cloud",
-    "api",
-    "backend",
-    "frontend"
+"python","sql","aws","gcp","azure","docker","kubernetes",
+"pandas","numpy","spark","hadoop","airflow",
+"tensorflow","pytorch","machine learning",
+"excel","tableau","power bi",
+"react","javascript","java","c++","golang"
 ]
 
+DEFAULT_SKILLS = {
+    "data scientist": ["python","machine learning","sql","pandas","statistics"],
+    "data analyst": ["sql","excel","python","power bi","statistics"],
+    "software engineer": ["python","java","javascript","git","docker","aws"],
+    "machine learning engineer": ["python","pytorch","tensorflow","docker","kubernetes","mlops"]
+}
 
 def extract_skills(text):
 

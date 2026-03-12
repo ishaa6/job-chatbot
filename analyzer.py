@@ -8,7 +8,13 @@ def analyze_jobs(jobs):
 
     for job in jobs:
 
-        text = job["title"] + " " + " ".join(job.get("tags", []))
+        text = (
+            job["title"]
+            + " "
+            + " ".join(job.get("tags", []))
+            + " "
+            + job.get("description", "")
+        )
         skills = extract_skills(text)
         skill_counter.update(skills)
 
